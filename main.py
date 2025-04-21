@@ -23,44 +23,44 @@ def main():
     def initial_options():
         # To display menu
         st.session_state.user_menu = streamlit_option_menu.option_menu(
-            menu_title='What are you looking for? 👀',
-            options=['Recommend me a similar movie', 'Describe me a movie', 'Check all Movies'],
+            menu_title='Your Next Movie Marathon Starts Here.  We’ve Got Your Movie Recommendations Ready! 👀',
+            options=['Movie Recommendations', 'Movie Description', 'Browse all Movies'],
             icons=['film', 'film', 'film'],
             menu_icon='list',
             orientation="horizontal",
         )
 
-        if st.session_state.user_menu == 'Recommend me a similar movie':
+        if st.session_state.user_menu == 'Movie Recommendations':
             recommend_display()
 
-        elif st.session_state.user_menu == 'Describe me a movie':
+        elif st.session_state.user_menu == 'Movie Description':
             display_movie_details()
 
-        elif st.session_state.user_menu == 'Check all Movies':
+        elif st.session_state.user_menu == 'Browse all Movies':
             paging_movies()
 
     def recommend_display():
 
-        st.title('Movie Recommender System')
+        st.title('WatchFlix – Intelligent Movie Recommendations')
 
         selected_movie_name = st.selectbox(
-            'Select a Movie...', new_df['title'].values
+            'Select your movie .', new_df['title'].values
         )
 
         rec_button = st.button('Recommend')
         if rec_button:
             st.session_state.selected_movie_name = selected_movie_name
-            recommendation_tags(new_df, selected_movie_name, r'Files/similarity_tags_tags.pkl',"are")
-            recommendation_tags(new_df, selected_movie_name, r'Files/similarity_tags_genres.pkl',"on the basis of genres are")
+            recommendation_tags(new_df, selected_movie_name, r'Files/similarity_tags_tags.pkl',"")
+            recommendation_tags(new_df, selected_movie_name, r'Files/similarity_tags_genres.pkl',"on the basis of genres")
             recommendation_tags(new_df, selected_movie_name,
-                                r'Files/similarity_tags_tprduction_comp.pkl',"from the same production company are")
-            recommendation_tags(new_df, selected_movie_name, r'Files/similarity_tags_keywords.pkl',"on the basis of keywords are")
-            recommendation_tags(new_df, selected_movie_name, r'Files/similarity_tags_tcast.pkl',"on the basis of cast are")
+                                r'Files/similarity_tags_tprduction_comp.pkl',"from the same production house")
+            recommendation_tags(new_df, selected_movie_name, r'Files/similarity_tags_keywords.pkl',"on the basis of keywords")
+            recommendation_tags(new_df, selected_movie_name, r'Files/similarity_tags_tcast.pkl',"on the basis of cast")
 
     def recommendation_tags(new_df, selected_movie_name, pickle_file_path,str):
 
         movies, posters = preprocess.recommend(new_df, selected_movie_name, pickle_file_path)
-        st.subheader(f'Best Recommendations {str}...')
+        st.subheader(f'Best Recommendations {str} :')
 
         rec_movies = []
         rec_posters = []
