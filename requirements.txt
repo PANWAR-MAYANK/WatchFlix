@@ -42,3 +42,4 @@ urllib3==2.4.0
 watchdog==6.0.0
 streamlit-option-menu==0.3.6
 streamlit-extras==0.3.5
+nltk==3.8.1
