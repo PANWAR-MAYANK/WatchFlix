@@ -16,35 +16,35 @@
 
 ---
 
-## 🔧 Skills & Tools Showcase
+## 🔧 Tech Stack at a Glance
 
-| Category             | Tools & Technologies                                                                 |
-|----------------------|----------------------------------------------------------------------------------------|
-| 👨‍💻 Programming        | `Python`, `Pandas`, `NumPy`                                                           |
-| 📊 Data Processing     | `CSV`, `Pickle`, `DataFrames`, `Text Cleaning`, `Data Merging`                       |
-| 🧠 Machine Learning    | `Scikit-learn`, `CountVectorizer`, `cosine_similarity`, `Content-Based Filtering`    |
-| 💡 NLP Techniques      | `Bag of Words`, `Stopwords Removal`, `Text Vectorization`                            |
-| 🖥️ Web Development     | `Streamlit`, `HTML`, `Widgets`, `Buttons`, `Page Navigation`, `Sliders`              |
-| 🖼️ UI/UX               | Poster Display, Search Interface, Responsive Layout                                 |
-| 🚀 Deployment          | Streamlit Cloud (`streamlit.io`), GitHub                                              |
-| 📁 Version Control     | Git, GitHub                                                                           |
+
+| 💻 **Technology** | 🔧 **Tool/Library**                     |
+|------------------|-----------------------------------------|
+| Programming      | Python 🐍                                |
+| Data Handling    | Pandas 📊, NumPy 🔢 , Serialization - `Pickle`                      |
+| NLP              | CountVectorizer (Scikit-learn) 🧠, NLTK - `Bag of Words`, `Stopwords Removal`, `Text Vectorization`           |
+| ML Similarity    | Cosine Similarity 🔁                     |
+| UI/UX            | Streamlit - Poster Display, Search Interface, Responsive Layout                             |
+| Data Storage     | CSV Files 📂, Pickle Serialization 🥒     |
+| Deployment       | GitHub, Streamlit Cloud ☁️                       |
+| Version Control  | Git & GitHub 🗂️                          |
 | 📈 Optimization        | Efficient File Caching, Modular Code Structure                                       |
-| 🎯 Soft Skills         | Problem Solving, Clean Code Practices, Project Architecture, UI Thinking            |
+
 
 ---
 
 ## 🚀 Launch the App
 
-🔗 [Click here to try WatchFlix](https://movie-recommender-syst.streamlit.app/)  
-📽️ [Watch Demo on YouTube](https://youtu.be/0BJgu4qZqOM)
+🔗 [Click here to try WatchFlix](https://watchflix.streamlit.app/)  
 
 ---
 
-## 📸 App in Action
+## 📸 Sneak Peek
 
-| Movie Details View | Browse All Movies |
-|-------------------|-------------------|
-| ![Details](https://github.com/AnupamMittal-21/Movie-Recommender-System/assets/96871662/beb53c76-4cd1-466d-b32d-97a63555c043) | ![Grid](https://github.com/AnupamMittal-21/Movie-Recommender-System/assets/96871662/02473070-91cf-45a0-8016-eee8b70ee2ae) |
+| 🔥 Movie Page                            | 📚 All Movies View                        |
+|-----------------------------------------|-------------------------------------------|
+| ![Movie Info](https://github.com/PANWAR-MAYANK/WatchFlix/assets/96871662/cce0c494-4dde-4872-868b-2f6f23b24a68) | ![All Movies](https://github.com/PANWAR-MAYANK/WatchFlix/assets/96871662/02473070-91cf-45a0-8016-eee8b70ee2ae) |
 
 ---
 
@@ -53,8 +53,8 @@
 # 1. Clone the Repo
 ```
 
-git clone https://github.com/AnupamMittal-21/Movie-Recommender-System.git
-cd Movie-Recommender-System
+git clone https://github.com/PANWAR-MAYANK/WatchFlix.git
+cd WatchFlix
 ```
 
 
