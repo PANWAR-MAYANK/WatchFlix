@@ -92,7 +92,7 @@ In a world of content overload, users struggle to decide what to watch next. Mos
 
 | 🔥 Movie Page                            | 📚 All Movies View                        |
 |-----------------------------------------|-------------------------------------------|
-| ![Movie Info](https://github.com/PANWAR-MAYANK/WatchFlix/assets/96871662/cce0c494-4dde-4872-868b-2f6f23b24a68) | ![All Movies](https://github.com/PANWAR-MAYANK/WatchFlix/assets/96871662/02473070-91cf-45a0-8016-eee8b70ee2ae) |
+| ![Recommendations](https://github.com/PANWAR-MAYANK/WatchFlix/blob/master/Images/Recommender.PNG) | ![Movie Description](https://github.com/PANWAR-MAYANK/WatchFlix/blob/master/Images/Description.PNG) | ![All Movies](https://github.com/PANWAR-MAYANK/WatchFlix/blob/master/Images/Browse.PNG) |
 
 ---
 
