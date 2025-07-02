@@ -5,6 +5,14 @@
 
 ---
 
+## 🎯 Problem Statement
+
+In a world of content overload, users struggle to decide what to watch next. Most existing platforms either use black-box algorithms or provide generic suggestions. I wanted to solve this by building a transparent, content-based recommendation system that helps users discover movies similar to ones they already like — based on features they intuitively relate to, like genre, cast, or director.
+
+
+
+---
+
 ## ✨ Project Features
 
 - 🧠 **NLP-based Filtering**: Using cosine similarity on content features
@@ -30,6 +38,46 @@
 | Deployment       | GitHub, Streamlit Cloud ☁️                       |
 | Version Control  | Git & GitHub 🗂️                          |
 | 📈 Optimization        | Efficient File Caching, Modular Code Structure                                       |
+
+
+---
+
+## 🔄 Workflow
+
+### 🔹 Data Ingestion & Merging:
+- Used TMDB 5000 Movies + Credits datasets.
+- Merged on title to combine metadata.
+
+### 🔹 Preprocessing & Feature Engineering:
+- Extracted relevant features: genres, keywords, cast, director, production company.
+- Cleaned and normalized data: removed stopwords, stemmed words using `PorterStemmer`.
+- Created a `tags` column by combining all descriptive metadata into a single text blob per movie.
+
+### 🔹 Vectorization & Similarity:
+- Used `CountVectorizer` to transform text into vectors.
+- Computed Cosine Similarity matrices for:
+  - Tags  
+  - Genres  
+  - Cast  
+  - Production company  
+  - Keywords  
+
+### 🔹 Caching:
+- Stored similarity matrices and processed data as `.pkl` files for improved performance.
+
+### 🔹 Frontend UI (Streamlit):
+- Movie Recommendations by 5 categories.
+- Movie Detail Page with dynamic posters and cast biographies.
+- All Movies Browser with pagination and posters.
+
+---
+
+## 📈 Impact
+
+✅ Helped users discover relevant movies across different criteria — *“like this because of cast”* or *“same genre”*.  
+✅ Delivered sub-second performance using cached data and efficient similarity search.  
+✅ Designed with scalability and modularity — clean separation between preprocessing, caching, and UI logic.  
+✅ Mimicked a real product experience: end-to-end from raw data → ML logic → UI → dynamic API integration.
 
 
 ---
@@ -78,22 +126,6 @@ pip install -r requirements.txt
 
 streamlit run main.py
 ```
-
---- 
-
-## 🧠 How It Works
-
-- 🧾 Load and preprocess data (movies, cast, crew, keywords)
-
-- 🧬 Combine important columns into a unified "tag"
-
-- ✨ Vectorize using CountVectorizer (BoW Model)
-
-- 🔍 Use cosine similarity for recommendations
-
-- 📥 Save vectorized data and similarities using Pickle
-
-- 🎬 Show posters and movie info using TMDB image links
 
 ---
 
