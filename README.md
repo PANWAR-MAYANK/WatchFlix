@@ -90,9 +90,15 @@ In a world of content overload, users struggle to decide what to watch next. Mos
 
 ## 📸 Sneak Peek
 
-| 🔥 Movie Page                            | 📚 All Movies View                        |
-|-----------------------------------------|-------------------------------------------|
-| ![Recommendations](https://github.com/PANWAR-MAYANK/WatchFlix/blob/master/Images/Recommender.PNG) | ![Movie Description](https://github.com/PANWAR-MAYANK/WatchFlix/blob/master/Images/Description.PNG) | ![All Movies](https://github.com/PANWAR-MAYANK/WatchFlix/blob/master/Images/Browse.PNG) |
+### 🔥 Movie Recommendations View
+![Recommendations](https://github.com/PANWAR-MAYANK/WatchFlix/blob/master/Images/Recommender.PNG)
+
+### 🎬 Movie Description Page
+![Movie Description](https://github.com/PANWAR-MAYANK/WatchFlix/blob/master/Images/Description.PNG)
+
+### 📚 All Movies Browser
+![All Movies](https://github.com/PANWAR-MAYANK/WatchFlix/blob/master/Images/Browse.PNG)
+
 
 ---
 
